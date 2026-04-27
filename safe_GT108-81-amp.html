@@ -1,0 +1,203 @@
+
+
+<!DOCTYPE html>
+<html amp lang="id">
+<head>
+   <meta charset="utf-8">
+   <title>ARI303: Temukan Cara Baru Menjalani Hari dengan Lebih Kreatif</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARI303 membantu Anda menemukan cara baru menjalani hari dengan lebih kreatif dan penuh inspirasi.">
+   <meta name="robots" content="index, follow">
+   <meta name="publisher" content="ARI303"/>
+   <link rel="icon" type="image/x-icon" href="https://gscproject.sgp1.cdn.digitaloceanspaces.com/ari303/icon-ari.avif">
+   <link rel="canonical" href="https://yzchen.tw/">
+   
+   <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js" />
+   <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1, end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1, end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1, end) 0s 1 normal both;animation:-amp-start 8s steps(1, end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+   <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+   <style amp-custom>
+      * { box-sizing: border-box; }
+      body { font-family: 'Inter', sans-serif; background: #00020a; color: #fff; margin: 0; padding: 0; overflow-x: hidden; }
+
+      /* BACKGROUND GAMBAR */
+      body::before {
+         content: ""; position: fixed; inset: 0; z-index: -1;
+         background: url("") no-repeat center center fixed;
+         background-size: cover;
+         filter: blur(8px) brightness(0.25);
+         opacity: 1;
+      }
+
+      .container { max-width: 450px; margin: 0 auto; padding: 20px 15px; }
+      header center { margin-bottom: 30px; filter: drop-shadow(0 0 15px #00ccff); }
+
+      /* TOMBOL LOGIN ATAS */
+      .btn-container {
+         position: relative; width: 100%; height: 80px; margin-bottom: 35px;
+         display: flex; justify-content: center; align-items: center;
+         padding: 3px; overflow: hidden; border-radius: 20px; z-index: 1;
+      }
+      .btn-container::before {
+         content: ""; position: absolute; width: 150%; height: 400%;
+         background: conic-gradient(transparent, #00ffff, #0044ff, #00ffff, transparent 30%);
+         animation: rotateBorder 3s linear infinite; z-index: -2;
+      }
+      .btn-ultra {
+         position: relative; width: 100%; height: 100%; background: rgba(0, 10, 20, 0.85);
+         backdrop-filter: blur(10px); border-radius: 18px; display: flex;
+         justify-content: center; align-items: center; text-decoration: none;
+         color: #fff; font-size: 20px; font-weight: 900; letter-spacing: 4px;
+         text-transform: uppercase; border: 1px solid rgba(0, 255, 255, 0.2);
+      }
+      .btn-ultra span {
+         background: linear-gradient(to right, #fff, #00ffff);
+         -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+         text-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+      }
+
+      /* PANEL AREA */
+      .rgb-panel {
+         position: relative; background: rgba(0, 5, 15, 0.95); border-radius: 25px;
+         padding: 2px; overflow: hidden; margin-bottom: 25px;
+      }
+      .rgb-panel::before {
+         content: ""; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+         background: conic-gradient(transparent, #00ffff, transparent 50%);
+         animation: rotateBorder 6s linear infinite; z-index: 1;
+      }
+      .inner-card { position: relative; z-index: 2; background: #000812; border-radius: 23px; overflow: hidden; }
+      .banner-wrap { position: relative; line-height: 0; }
+      .stats-dashboard { padding: 25px 20px 10px 20px; background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,204,255,0.05) 100%); }
+      
+      /* STATS ANIMATION (DIKEMBALIKAN) */
+      .stat-item { margin-bottom: 15px; }
+      .stat-info { display: flex; justify-content: space-between; margin-bottom: 5px; }
+      .stat-info label { font-size: 9px; font-weight: 900; color: #00ccff; letter-spacing: 1px; }
+      .counter { font-size: 12px; font-weight: 900; color: #fff; font-family: monospace; }
+      
+      .progress-container { height: 6px; background: rgba(0, 204, 255, 0.1); border-radius: 50px; overflow: hidden; position: relative;}
+      .progress-fill { height: 100%; background: linear-gradient(90deg, #0044ff, #00ffff); box-shadow: 0 0 10px #00ffff; border-radius: 50px; }
+      
+      /* Animasi Bar */
+      .fill-t1 { animation: bar1 4s infinite alternate; }
+      .fill-t2 { animation: bar2 3s infinite alternate; }
+      @keyframes bar1 { from { width: 70%; } to { width: 98%; } }
+      @keyframes bar2 { from { width: 85%; } to { width: 99%; } }
+
+      /* Animasi Angka */
+      .count-1::after { content: "96%"; animation: counts1 4s steps(1) infinite; }
+      .count-2::after { content: "99%"; animation: counts2 3s steps(1) infinite; }
+      @keyframes counts1 { 0%, 100% { content: "80%"; } 50% { content: "97.4%"; } }
+      @keyframes counts2 { 0%, 100% { content: "92%"; } 50% { content: "99.9%"; } }
+
+      /* TOMBOL KATEGORI */
+      .category-panel-grid {
+         display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px;
+         padding: 10px 15px 20px 15px; background: rgba(0,0,0,0.3);
+      }
+      .cat-item {
+         position: relative; padding: 1px; border-radius: 6px; overflow: hidden;
+         display: flex; justify-content: center; align-items: center;
+      }
+      .cat-item::before {
+         content: ""; position: absolute; width: 200%; height: 200%;
+         background: conic-gradient(transparent, #00ffff, transparent 40%);
+         animation: rotateBorder 3s linear infinite;
+      }
+      .cat-btn {
+         position: relative; z-index: 1; width: 100%; background: #000c1a;
+         padding: 10px 2px; border-radius: 5px; text-align: center;
+         text-decoration: none; color: #00ffff; font-size: 8px;
+         font-weight: 900; text-transform: uppercase; letter-spacing: 0.5px;
+         border: 1px solid rgba(0, 255, 255, 0.3);
+      }
+
+      .menu-grid { display: grid; grid-template-columns: 1fr; gap: 15px; margin-top: 10px; }
+      .rgb-wrapper { position: relative; padding: 2px; border-radius: 15px; overflow: hidden; display: flex; }
+      .rgb-wrapper::before {
+         content: ""; position: absolute; width: 150%; height: 400%; top: -150%; left: -25%;
+         background: conic-gradient(transparent, #00ffff, #0044ff, #00ffff, transparent 30%);
+         animation: rotateBorder 4s linear infinite;
+      }
+      .menu-btn {
+         position: relative; z-index: 1; width: 100%; background: rgba(0, 20, 40, 0.9);
+         padding: 20px; border-radius: 13px; display: flex; justify-content: space-between; align-items: center;
+         text-decoration: none; color: #fff; font-weight: 900; font-size: 13px; border-left: 4px solid #00ffff;
+      }
+
+      @keyframes rotateBorder { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+      @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
+      
+      .running-text { background: #000; padding: 12px 0; border-top: 1px solid rgba(0, 255, 255, 0.1); }
+      .running-text span { display: inline-block; white-space: nowrap; padding-left: 100%; animation: scroll 15s linear infinite; color: #00ffff; font-size: 10px; font-weight: bold; text-transform: uppercase; }
+   </style>
+</head>
+
+<body>
+   <div class="container">
+      <header>
+         <center>
+            <amp-img src="https://gscproject.sgp1.cdn.digitaloceanspaces.com/ari303/logoari303.png" alt="Logo" width="410" height="100" layout="intrinsic"></amp-img>
+         </center>
+      </header>
+
+      <div class="btn-container">
+         <a href="https://go.springtrap.xyz/JP1HkJ" class="btn-ultra">
+            <span>LOGIN & DAFTAR</span>
+         </a>
+      </div>
+
+      <div class="rgb-panel">
+         <div class="inner-card">
+            <div class="banner-wrap">
+               <amp-img src="https://res.cloudinary.com/dbzj4ggwf/image/upload/v1777250431/ARI303_7_de3x12.png" width="1024" height="1024" layout="responsive"></amp-img>
+            </div>
+
+            <div class="stats-dashboard">
+               <div class="stat-item">
+                  <div class="stat-info"><label>⚡ R&#8203;T&#8203;P LIVE</label><span class="counter count-1"></span></div>
+                  <div class="progress-container"><div class="progress-fill fill-t1"></div></div>
+               </div>
+               <div class="stat-item">
+                  <div class="stat-info"><label>💎 WINRATE</label><span class="counter count-2"></span></div>
+                  <div class="progress-container"><div class="progress-fill fill-t2"></div></div>
+               </div>
+            </div>
+
+            <div class="category-panel-grid">
+               <div class="cat-item"><a href="https://go.springtrap.xyz/JP1HkJ" class="cat-btn">T&#8203;O&#8203;G&#8203;E&#8203;L</a></div>
+               <div class="cat-item"><a href="https://go.springtrap.xyz/JP1HkJ" class="cat-btn">S&#8203;L&#8203;O&#8203;T</a></div>
+               <div class="cat-item"><a href="https://go.springtrap.xyz/JP1HkJ" class="cat-btn">C&#8203;A&#8203;S&#8203;I&#8203;N&#8203;O</a></div>
+               <div class="cat-item"><a href="https://go.springtrap.xyz/JP1HkJ" class="cat-btn">LIVE GAME</a></div>
+            </div>
+
+            <div class="running-text">
+               <span>••• SERVER STATUS: ONLINE ••• WINRATE: INCREASED ••• D&#8203;E&#8203;P&#8203;O&#8203;S&#8203;I&#8203;T: INSTANT ••• W&#8203;I&#8203;T&#8203;H&#8203;D&#8203;R&#8203;A&#8203;W: SUCCESS •••</span>
+            </div>
+         </div>
+      </div>
+
+      <div class="menu-grid">
+         <div class="rgb-wrapper">
+            <a href="https://go.springtrap.xyz/JP1HkJ" class="menu-btn">
+               <span>🏆 PORTAL UTAMA AKSES VIP</span>
+               <span>➜</span>
+            </a>
+         </div>
+         <div class="rgb-wrapper">
+            <a href="https://go.springtrap.xyz/JP1HkJ" class="menu-btn">
+               <span>💎 L&#8203;I&#8203;N&#8203;K&#8203; &#8203;A&#8203;L&#8203;T&#8203;E&#8203;R&#8203;N&#8203;A&#8203;T&#8203;I&#8203;F TERCEPAT</span>
+               <span>➜</span>
+            </a>
+         </div>
+      </div>
+
+      <footer style="text-align:center; color:rgba(0, 204, 255, 0.3); font-size:9px; margin-top:50px; letter-spacing: 3px;">
+         <p>© 2026 ARI303</p>
+      </footer>
+   </div>
+</body>
+</html>
